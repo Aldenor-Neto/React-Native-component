@@ -6,11 +6,12 @@ import DimensoesFixas from './componentes/DimensoesFixas';
 import ChecaNumero from './componentes/ChecaNumero';
 import Evento from './componentes/Evento';
 import ComponenteImagem from './componentes/ComponenteImagem';
+import Botoes from './componentes/Botoes';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <ComponenteImagem></ComponenteImagem>
+      <Botoes></Botoes>
       <StatusBar style="auto" />
     </View>
   );
