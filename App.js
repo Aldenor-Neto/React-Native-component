@@ -8,11 +8,12 @@ import Evento from './componentes/Evento';
 import ComponenteImagem from './componentes/ComponenteImagem';
 import Botoes from './componentes/Botoes';
 import ListaPlana from './componentes/ListaPlana';
+import ImagemBG from './componentes/ImagemBG';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <ListaPlana></ListaPlana>
+      <ImagemBG></ImagemBG>
       <StatusBar style="auto" />
     </View>
   );
