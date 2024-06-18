@@ -14,7 +14,6 @@ import StateFunction from './componentes/StateFunction';
 export default function App() {
   return (
     <View style={styles.container}>
-      <StateFunction/>
       <StatusBar style="auto" />
     </View>
   );

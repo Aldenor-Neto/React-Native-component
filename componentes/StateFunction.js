@@ -7,7 +7,7 @@ export default function StateFunction() {
     const [ligado, setLigado] = useState(true);
 
     return (
-        <View>
+        <View style={styles.container}>
             <Text style={styles.texto}>
                 {ligado ? 'O programa está Ligado' : 'O programa está desligado'}
             </Text>
@@ -23,6 +23,11 @@ export default function StateFunction() {
 }
 
 const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
     texto: {
         color: '#FFF',
         fontSize: 25,
