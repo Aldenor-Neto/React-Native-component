@@ -7,11 +7,12 @@ import ChecaNumero from './componentes/ChecaNumero';
 import Evento from './componentes/Evento';
 import ComponenteImagem from './componentes/ComponenteImagem';
 import Botoes from './componentes/Botoes';
+import ListaPlana from './componentes/ListaPlana';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Botoes></Botoes>
+      <ListaPlana></ListaPlana>
       <StatusBar style="auto" />
     </View>
   );
