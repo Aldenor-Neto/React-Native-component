@@ -9,10 +9,12 @@ import ComponenteImagem from './componentes/ComponenteImagem';
 import Botoes from './componentes/Botoes';
 import ListaPlana from './componentes/ListaPlana';
 import ImagemBG from './componentes/ImagemBG';
+import StateFunction from './componentes/StateFunction';
 
 export default function App() {
   return (
     <View style={styles.container}>
+      <StateFunction/>
       <StatusBar style="auto" />
     </View>
   );
