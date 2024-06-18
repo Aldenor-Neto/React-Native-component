@@ -13,7 +13,6 @@ import ImagemBG from './componentes/ImagemBG';
 export default function App() {
   return (
     <View style={styles.container}>
-      <ImagemBG></ImagemBG>
       <StatusBar style="auto" />
     </View>
   );
