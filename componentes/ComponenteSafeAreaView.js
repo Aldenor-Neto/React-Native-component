@@ -8,6 +8,7 @@ export default function ComponenteSafeareaView() {
             <Text>Ajusta o contéudo na tela evitando que saia dos limites</Text>
             <Image
                 source={require('../assets/imagens/imagem home studio Aldenor Neto.jpg')}
+                resizeMode="center"
             />
         </SafeAreaView>
     )

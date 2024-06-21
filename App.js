@@ -12,11 +12,12 @@ import ImagemBG from './componentes/ImagemBG';
 import StateFunction from './componentes/StateFunction';
 import StateClass from './componentes/StateClass';
 import ComponenteSafeareaView from './componentes/ComponenteSafeAreaView';
+import ComponenteSwitch from './componentes/ComponenteShitch';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <ComponenteSafeareaView/>
+      <ComponenteSwitch/>
       <StatusBar style="auto" />
     </View>
   );
