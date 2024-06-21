@@ -11,11 +11,12 @@ import ListaPlana from './componentes/ListaPlana';
 import ImagemBG from './componentes/ImagemBG';
 import StateFunction from './componentes/StateFunction';
 import StateClass from './componentes/StateClass';
+import ComponenteSafeareaView from './componentes/ComponenteSafeAreaView';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <StateClass/>
+      <ComponenteSafeareaView/>
       <StatusBar style="auto" />
     </View>
   );
