@@ -13,11 +13,12 @@ import StateFunction from './componentes/StateFunction';
 import StateClass from './componentes/StateClass';
 import ComponenteSafeareaView from './componentes/ComponenteSafeAreaView';
 import ComponenteSwitch from './componentes/ComponenteShitch';
+import Rolagem from './componentes/RolagemScrollView';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <ComponenteSwitch/>
+      <Rolagem/>
       <StatusBar style="auto" />
     </View>
   );
