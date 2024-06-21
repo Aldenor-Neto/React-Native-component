@@ -14,11 +14,12 @@ import StateClass from './componentes/StateClass';
 import ComponenteSafeareaView from './componentes/ComponenteSafeAreaView';
 import ComponenteSwitch from './componentes/ComponenteShitch';
 import Rolagem from './componentes/RolagemScrollView';
+import Toque from './componentes/ToqueTouchable';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Rolagem/>
+      <Toque />
       <StatusBar style="auto" />
     </View>
   );
