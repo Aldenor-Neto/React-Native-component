@@ -15,11 +15,12 @@ import ComponenteSafeareaView from './componentes/ComponenteSafeAreaView';
 import ComponenteSwitch from './componentes/ComponenteShitch';
 import Rolagem from './componentes/RolagemScrollView';
 import Toque from './componentes/ToqueTouchable';
+import ComponenteModal from './componentes/Modal';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Toque />
+      <ComponenteModal/>
       <StatusBar style="auto" />
     </View>
   );
