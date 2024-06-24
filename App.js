@@ -17,33 +17,13 @@ import ComponenteSwitch from './componentes/ComponenteShitch';
 import Rolagem from './componentes/RolagemScrollView';
 import Toque from './componentes/ToqueTouchable';
 import ComponenteModal from './componentes/Modal';
+import ComponenteStatusBar from './componentes/ComponenteStatusBar';
 
 export default function App() {
 
-const [cor, setCor] = useState('white');
-
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar backgroundColor={cor} />
-
-      <Text style={styles.texto}>Estudando StatusBar!</Text>
-      <Text style={styles.texto}>escolha a cor da barra</Text>
-
-      <View>
-        <Button
-        title='Vermelho'
-        onPress={() => {setCor('red')}}
-        />
-        <Button
-        title='Verde'
-        onPress={() => {setCor('green')}}
-        />
-        <Button
-        title='Azul'
-        onPress={() => {setCor('blue')}}
-        />
-      </View>
-
+      <ComponenteStatusBar/>
     </SafeAreaView>
   );
 }
