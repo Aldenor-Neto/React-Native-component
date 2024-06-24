@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Image, SafeAreaView, Button } from 'react-native';
+import { useState } from 'react';
 
 import HelloWord from './componentes/HelloWord';
 import DimensoesFixas from './componentes/DimensoesFixas';
@@ -18,11 +19,32 @@ import Toque from './componentes/ToqueTouchable';
 import ComponenteModal from './componentes/Modal';
 
 export default function App() {
+
+const [cor, setCor] = useState('white');
+
   return (
-    <View style={styles.container}>
-      <ComponenteModal/>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView style={styles.container}>
+      <StatusBar backgroundColor={cor} />
+
+      <Text style={styles.texto}>Estudando StatusBar!</Text>
+      <Text style={styles.texto}>escolha a cor da barra</Text>
+
+      <View>
+        <Button
+        title='Vermelho'
+        onPress={() => {setCor('red')}}
+        />
+        <Button
+        title='Verde'
+        onPress={() => {setCor('green')}}
+        />
+        <Button
+        title='Azul'
+        onPress={() => {setCor('blue')}}
+        />
+      </View>
+
+    </SafeAreaView>
   );
 }
 
@@ -33,4 +55,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  texto: {
+    color: 'white',
+    fontSize: 25
+  }
 });
