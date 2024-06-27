@@ -18,12 +18,13 @@ import Rolagem from './componentes/RolagemScrollView';
 import Toque from './componentes/ToqueTouchable';
 import ComponenteModal from './componentes/Modal';
 import ComponenteStatusBar from './componentes/ComponenteStatusBar';
+import DadosStaticos from './componentes/staticClass/DadosStaticos';
 
 export default function App() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <ComponenteStatusBar/>
+      <DadosStaticos />
     </SafeAreaView>
   );
 }
