@@ -19,12 +19,13 @@ import Toque from './componentes/ToqueTouchable';
 import ComponenteModal from './componentes/Modal';
 import ComponenteStatusBar from './componentes/ComponenteStatusBar';
 import DadosStaticos from './componentes/staticClass/DadosStaticos';
+import LinkExterno from './componentes/LinkExterno';
 
 export default function App() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <DadosStaticos />
+      <LinkExterno/>
     </SafeAreaView>
   );
 }
